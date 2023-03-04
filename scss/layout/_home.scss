@@ -1,0 +1,103 @@
+@use '../globals/colors' as c;
+@use '../globals/variables';
+
+.home_page_container{
+   
+   height: 100vh;
+
+    &::before{
+        content: '';
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        position: absolute;
+        background-image: url('../images/home_bg.jpg');
+        background-position:top center;
+        background-size:cover;
+        opacity: 0.2;
+        z-index: -1;
+    }
+
+
+   
+    .home_page__header{
+    
+        .home_page__nav{
+            width: 100% ;
+            display: flex;
+            flex-direction:row;
+            justify-content:space-between;
+            padding: 0.5em ;
+            font-size: 1.2rem;
+            
+            
+            .home_page__logo{
+                margin-top:auto;
+                margin-bottom:auto;
+                
+            }
+    
+            .home_page__ul,.home_page__list{
+                list-style-type:none;
+                display: inline-block;
+                padding:0.3em;
+                padding-right: 1rem;
+    
+                & :hover{
+                    // color: skyblue;
+                    text-shadow: 5px 5px 10px gray;
+                    transition: 0.5s ease-in-out;
+                    font-size: 1.5rem;
+                }
+                
+            }
+        }  // nav bar 
+      }  // header
+
+      .home_page_main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        font-size: 2rem;
+        padding: 1.5em;
+
+        .home_page_left{
+            width: 42%;
+        }
+
+        .home_page_right{
+            background-color: rgba(128, 128, 128, 0.308);
+            opacity: 0.4;
+            padding: 1em;
+            color: white;
+            border-radius: 0.5em;
+
+            &:hover{
+                opacity: 1;
+                transition: 0.4s ease-in-out;
+            }
+        }
+      }  // main part 
+
+
+      
+
+
+      .home_page_footer{
+        // display: flex;
+        // justify-content: center;
+        background-color: rgba(10, 9, 9, 0.073);
+        padding: 0.5em;
+       width: fit-content;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: auto;
+        }
+
+      
+} // main container
+
+
+

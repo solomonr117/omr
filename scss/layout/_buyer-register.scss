@@ -1,0 +1,124 @@
+@use '../globals/colors' as c;
+@use '../globals/variables';  
+@use '../globals/typography';
+
+
+.buyer_register_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+
+    &::before{
+        content: '';
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        position: absolute;
+        background-image: url('../images/background_img.jpg');
+        background-position:top center;
+        background-size:cover;
+        opacity: 0.5;
+    }
+
+   .buyer_register_header{
+    display: flex;
+    flex-direction:row;
+    .buyer_register_navbar{
+        width: 100%;
+        padding: 1em;
+        z-index: 2;
+
+        .buyer_register_logo{
+            margin-left: 1em;
+            font-size: 2rem;
+            font-weight: 800;
+
+          
+     }            
+    } // Navbar 
+    } //Header Section 
+
+    .buyer_register_main{
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5rem;
+        padding-right: 5rem;
+
+
+        .buyer_register_form{
+            background-color: black;
+            border-radius:1em;
+            opacity: 70%;
+            width: 25em;
+            height: fit-content;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            box-shadow: 0em 1em 1em 0.1em rgba(128, 128, 128, 0.381);
+
+            .buyer_register_formholder{
+                 display: flex;
+                 width: 100%;
+                 justify-content: center;
+                 flex-direction: column;
+                 margin-inline:auto;
+                
+
+                 .buyer_register_heading{
+                     width: 100%;
+                     padding-top: 2rem;
+                     font-size:2.5rem;
+                     display: flex;
+                     justify-content:center;
+                 }
+                
+                .buyer_register_section{
+                    display: flex;
+                    flex-direction:column;
+                    padding:1em;
+                    gap:1.5rem; 
+                    margin-top:2rem;   
+                }
+
+                .buyer_register_input{
+                    padding: 1em;
+                    width: 100%;
+                    border-radius:0.6em;
+                    border:none;
+                    outline:none;
+                         }
+
+                .buyer_register_btn{
+                    margin-inline:auto;
+                    width: 10rem;
+                    padding: 1em 1em;
+                    border-radius:0.6em;
+                    font-size: 1em;
+                    font-weight: bold;
+                    margin-top:0.5rem;
+                    border: none;
+                    &:hover{
+                        background-color: black ;
+                        color: white;
+                        transition: 0.5s ease-out;
+                    }
+                }
+            
+
+            } // formholer
+        }  // loginform
+    }  //main 
+
+.buyer_register_footer{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    background-color: rgb(10, 9, 9);
+    padding: 0.5em;
+}
+
+}  //container

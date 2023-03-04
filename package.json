@@ -1,0 +1,17 @@
+{
+  "name": "omr",
+  "version": "1.0.0",
+  "description": "It is a simple Instrument Selling Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Solomon Raja D",
+  "license": "license - Stains Infotech",
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
+  }
+}

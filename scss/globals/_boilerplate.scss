@@ -1,0 +1,25 @@
+@use 'colors' as c;
+
+html{
+    box-sizing:border-box ;
+    font-size:100%;
+}
+
+*, *:before,*:aftere{
+    box-sizing:inherit ;
+}
+
+body{
+    margin :0;
+    padding: 0;
+    font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:c.$site_white;
+    position: relative;
+    background-color: c.$site_black;
+    scroll-behavior: smooth;
+    
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
